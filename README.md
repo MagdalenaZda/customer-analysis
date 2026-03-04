@@ -13,6 +13,7 @@ This project focuses on **uncovering distinctive customer characteristics** and 
 1.**Import data**
 * **Import Process:** The raw dataset was imported directly from a CSV format into a **PostgreSQL** environment.
 * **Staging Strategy:** To prevent import failures due to formatting inconsistencies, all columns were initially loaded as **TEXT** into a temporary staging table.
+  
 2.**Data Transformation**
 * Data was moved from the temporary table into structured production tables. During this process, **TEXT** values were converted into appropriate data types such as **INT**, **NUMERIC**, and **DATE**.
 * To ensure a unified timeline for analysis, the `dt_customer` field was standardized using the `TO_DATE` function:
@@ -28,9 +29,9 @@ age_group = CASE
     ELSE 'Seniors'
 END 
 ```
-3.**Visualization**
-**Filtering**
-Interactivity is driven by two primary types of slicers, allowing for granular data exploration:
+3.**Visualizations**
+
+*Interactivity is driven by two primary types of slicers, allowing for granular data exploration:
 * **List Slicers:** Implemented for both **Age Groups** and **Income Brackets**, enabling users to filter the entire report by specific demographic segments.
 * **Tile Slicers:** Used for **Month Selection**, providing a clean, touch-friendly interface for temporal analysis.
 Data Consistency and Cross-Filtering
