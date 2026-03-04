@@ -38,6 +38,10 @@ Data Consistency and Cross-Filtering
 To ensure a seamless analytical flow, **Mutual Cross-Filtering** has been enabled for all visual objects. Selecting a data point in one chart (e.g., a specific age group) automatically updates all other visuals to reflect the filtered context, maintaining absolute data consistency across the report.
 * **KPI Cards:** Total Customers:A real-time count of the unique customer base, Promotional Transactions: The total volume of transactions successfully completed under promotional campaigns.
 ## Tools
+*Data Transformation: PostgreSQL
+*Analytcis: PostgreSQL
+*Visualization: Power BI Dashboards
+*Documentation: GitHub
 
 ## Project Preview
 
