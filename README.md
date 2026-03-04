@@ -16,9 +16,9 @@ This project focuses on **uncovering distinctive customer characteristics** and 
 2.**Data Transformation**
 * Data was moved from the temporary table into structured production tables. During this process, **TEXT** values were converted into appropriate data types such as **INT**, **NUMERIC**, and **DATE**.
 * To ensure a unified timeline for analysis, the `dt_customer` field was standardized using the `TO_DATE` function:
+```sql
 TO_DATE(dt_customer, 'DD-MM-YYYY')
-
-
+```
 
 ## Data Source 
 https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis
